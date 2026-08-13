@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="color-scheme" content="dark">
 <meta name="theme-color" content="#0E1113">
-<title>Cognitaur Innovation Lab — CAD · CNC · 3D Printing · Robotics · Research</title>
+<title>Cognitaur Innovation Lab · CAD · CNC · 3D Printing · Robotics · Research</title>
 <meta name="description" content="Cognitaur Innovation Lab, founded by Ayushmaan Bellum. A youth-led lab working at the intersection of CAD, CNC, 3D printing, robotics and research. Camps, internships, mentorship and collaboration.">
 <link rel="icon" type="image/jpeg" href="assets/img/favicon.jpg">
 <link rel="apple-touch-icon" href="assets/img/favicon.jpg">
@@ -126,7 +126,7 @@
     text-transform:uppercase;letter-spacing:-0.02em;line-height:.92;
   }
   .hero h1 .thin{color:var(--dim);-webkit-text-stroke:0}
-  .hero-sub{max-width:44ch;margin:1.8rem 0 0;font-size:clamp(1.05rem,1.4vw,1.3rem);color:#c9c6bd}
+  .hero-sub{max-width:44ch;margin:1.8rem 0 0;font-size:clamp(1.05rem,1.4vw,1.3rem);color:#c9c6bd;text-align:justify;text-justify:inter-word;hyphens:auto}
   .hero-pillars{display:flex;flex-wrap:wrap;gap:.5rem .4rem;margin:2rem 0 2.5rem;font-family:var(--mono);font-size:.74rem;letter-spacing:.12em;text-transform:uppercase;color:var(--dim)}
   .hero-pillars span{border:1px solid var(--line-2);padding:.45em .8em;border-radius:2px}
   .hero-pillars span b{color:var(--brass);font-weight:500}
@@ -156,7 +156,7 @@
   .pillar-index .tick{flex:1;height:1px;background:var(--line-2);max-width:120px}
   .pillar h3{font-size:clamp(2rem,4.6vw,3.4rem);text-transform:uppercase;margin-bottom:1.1rem;line-height:.98}
   .pillar h3 em{font-style:normal;display:block;font-family:var(--mono);font-size:.8rem;font-weight:400;letter-spacing:.18em;color:var(--steel);margin-top:.7rem}
-  .pillar p{color:#c4c1b8;max-width:46ch}
+  .pillar p{color:#c4c1b8;max-width:46ch;text-align:justify;text-justify:inter-word;hyphens:auto}
   .pillar-tags{display:flex;flex-wrap:wrap;gap:.45rem;margin-top:1.6rem}
   .pillar-tags span{font-family:var(--mono);font-size:.68rem;letter-spacing:.08em;text-transform:uppercase;color:var(--dim);border:1px solid var(--line-2);padding:.4em .7em;border-radius:2px}
   .pillar-media{display:grid;gap:1rem}
@@ -167,7 +167,14 @@
   .media:has(img,video,iframe){border:1px solid var(--line-2)}
   .media img{width:100%;height:100%;object-fit:cover;display:block}
   .media video{width:100%;aspect-ratio:16/9;object-fit:cover;display:block;background:#000}
-  .media iframe{width:100%;aspect-ratio:16/9;border:0;display:block}
+  /* Video embeds: Drive on desktop, YouTube on mobile — locked 16:9 */
+  .media--embed{
+    position:relative;width:100%;aspect-ratio:16/9;overflow:hidden;background:var(--ink-2);
+  }
+  .media--embed iframe{
+    position:absolute;inset:0;width:100%;height:100%;border:0;display:block;
+  }
+  .media--embed .embed-yt{display:none}
   .ph{
     aspect-ratio:var(--ar,16/9);width:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.9rem;
     border:1px dashed rgba(201,162,75,.45);border-radius:4px;
@@ -193,7 +200,8 @@
   .founder-grid{display:grid;grid-template-columns:0.85fr 1.15fr;gap:clamp(2rem,5vw,5rem);align-items:start}
   .founder-portrait .ph{--ar:4/5}
   .founder-body h2{font-size:clamp(2rem,4.5vw,3.4rem);text-transform:uppercase;margin:.9rem 0 1.4rem;line-height:1}
-  .founder-body p{color:#c4c1b8;margin-bottom:1.1rem;max-width:58ch}
+  .founder-body p{color:#c4c1b8;margin-bottom:1.1rem;max-width:58ch;text-align:justify;text-justify:inter-word;hyphens:auto}
+  .founder-body p.founder-quote{text-align:left;hyphens:manual}
   .founder-body p .edit{color:var(--brass)}
   .founder-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:4px;overflow:hidden;margin-top:2.2rem}
   .founder-stats div{background:var(--ink-2);padding:1.2rem 1rem}
@@ -212,7 +220,7 @@
   .card:hover::before{transform:scaleX(1)}
   .card .meta{font-family:var(--mono);font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;color:var(--steel);display:flex;justify-content:space-between;margin-bottom:1.2rem}
   .card h3{font-size:1.45rem;text-transform:uppercase;margin-bottom:.8rem;line-height:1.05}
-  .card p{font-size:.95rem;color:#b9b6ad;flex:1;margin-bottom:1.6rem}
+  .card p{font-size:.95rem;color:#b9b6ad;flex:1;margin-bottom:1.6rem;text-align:justify;text-justify:inter-word;hyphens:auto}
   .card .card-foot{display:flex;justify-content:space-between;align-items:center;font-family:var(--mono);font-size:.72rem;color:var(--dim);letter-spacing:.06em}
   .card a.reg{font-family:var(--mono);font-size:.74rem;letter-spacing:.1em;text-transform:uppercase;color:var(--brass);display:inline-flex;align-items:center;gap:.4em}
   .card a.reg:hover{color:var(--brass-2)}
@@ -220,7 +228,7 @@
   /* ---- Register form ---- */
   #register{background:var(--ink-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
   .form-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,5vw,4.5rem);align-items:start}
-  .form-note p{color:#c4c1b8;margin-bottom:1.2rem;max-width:42ch}
+  .form-note p{color:#c4c1b8;margin-bottom:1.2rem;max-width:42ch;text-align:justify;text-justify:inter-word;hyphens:auto}
   .form-note ul{list-style:none;margin-top:1.6rem;display:grid;gap:.9rem}
   .form-note li{font-family:var(--mono);font-size:.82rem;color:var(--dim);display:flex;gap:.8rem;align-items:flex-start}
   .form-note li::before{content:"⊕";color:var(--brass)}
@@ -242,12 +250,12 @@
   /* ---- Internships ---- */
   .intern-grid{display:grid;grid-template-columns:1.1fr 0.9fr;gap:clamp(2rem,5vw,4.5rem);align-items:center}
   .intern-body h2{font-size:clamp(2rem,4.5vw,3.4rem);text-transform:uppercase;margin:.9rem 0 1.4rem}
-  .intern-body p{color:#c4c1b8;max-width:52ch;margin-bottom:1.6rem}
+  .intern-body p{color:#c4c1b8;max-width:52ch;margin-bottom:1.6rem;text-align:justify;text-justify:inter-word;hyphens:auto}
   .intern-list{display:grid;gap:1px;background:var(--line);border:1px solid var(--line);border-radius:4px;overflow:hidden}
   .intern-list div{background:var(--ink);padding:1.3rem 1.4rem;display:flex;gap:1.2rem;align-items:baseline}
   .intern-list .no{font-family:var(--mono);font-size:.72rem;color:var(--brass);letter-spacing:.1em}
   .intern-list .txt b{font-family:var(--disp);font-size:1.05rem;text-transform:uppercase;letter-spacing:.02em}
-  .intern-list .txt p{font-size:.9rem;color:var(--dim);margin:.35rem 0 0;max-width:none}
+  .intern-list .txt p{font-size:.9rem;color:var(--dim);margin:.35rem 0 0;max-width:none;text-align:justify;text-justify:inter-word;hyphens:auto}
 
   /* ---- Mentors ---- */
   .mentor-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.2rem}
@@ -265,7 +273,7 @@
   #collab .wrap{position:relative;z-index:2}
   #collab .eyebrow{justify-content:center}
   #collab h2{font-size:clamp(2.4rem,6vw,5rem);text-transform:uppercase;margin:1.4rem auto 1.4rem;max-width:16ch;line-height:1}
-  #collab p{color:#c4c1b8;max-width:52ch;margin:0 auto 2.4rem}
+  #collab p{color:#c4c1b8;max-width:52ch;margin:0 auto 2.4rem;text-align:justify;text-justify:inter-word;hyphens:auto}
   .collab-actions{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap}
   .collab-contacts{margin-top:3rem;display:flex;gap:2.5rem;justify-content:center;flex-wrap:wrap;font-family:var(--mono);font-size:.8rem;color:var(--dim);letter-spacing:.06em}
   .collab-contacts a{color:var(--paper);border-bottom:1px solid var(--brass);padding-bottom:2px}
@@ -294,7 +302,7 @@
   .inv-no{font-family:var(--mono);font-size:.66rem;letter-spacing:.14em;color:var(--steel);margin-bottom:.55rem}
   .inv-card h3{font-size:1.5rem;text-transform:uppercase;margin-bottom:.35rem;line-height:1}
   .inv-cat{font-family:var(--mono);font-size:.64rem;letter-spacing:.1em;text-transform:uppercase;color:var(--dim);margin-bottom:1rem}
-  .inv-card p{font-size:.9rem;color:#b9b6ad}
+  .inv-card p{font-size:.9rem;color:#b9b6ad;text-align:justify;text-justify:inter-word;hyphens:auto}
   .inv-card p .edit{color:var(--brass)}
 
   /* ---- Media / Press ---- */
@@ -304,7 +312,7 @@
   .press-item:hover{background:var(--ink-3)}
   .press-outlet{font-family:var(--mono);font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--brass)}
   .press-item h3{font-family:var(--disp);font-size:1.05rem;font-weight:700;line-height:1.25;letter-spacing:0}
-  .press-item .press-note{font-size:.85rem;color:var(--dim);margin-top:.35rem;font-family:var(--body)}
+  .press-item .press-note{font-size:.85rem;color:var(--dim);margin-top:.35rem;font-family:var(--body);text-align:justify;text-justify:inter-word;hyphens:auto}
   .press-meta{font-family:var(--mono);font-size:.7rem;letter-spacing:.1em;color:var(--steel);text-transform:uppercase;white-space:nowrap}
   .press-meta a{color:var(--brass);border-bottom:1px solid var(--brass);padding-bottom:1px}
   .press-meta a:hover{color:var(--brass-2)}
@@ -334,6 +342,8 @@
     .founder-stats{grid-template-columns:repeat(2,1fr)}
     .row2{grid-template-columns:1fr}
     .sec-head .coord{text-align:left}
+    .media--embed .embed-drive{display:none}
+    .media--embed .embed-yt{display:block}
   }
 </style>
 </head>
@@ -369,8 +379,8 @@
   <div class="wrap">
     <div class="hero-grid">
       <div class="hero-logo reveal">
-        <img src="assets/img/logo-cognitaur.jpg" alt="Cognitaur — a hand-drawn robot with an exposed brain">
-        <div class="hero-logo-cap"><span>FIG. 01 — THE COGNITAUR</span><span>⊕ 0,0,0</span></div>
+        <img src="assets/img/logo-cognitaur.jpg" alt="Cognitaur, a hand-drawn robot with an exposed brain">
+        <div class="hero-logo-cap"><span>FIG. 01 · THE COGNITAUR</span><span>⊕ 0,0,0</span></div>
       </div>
       <div class="hero-copy">
         <div class="hero-origin reveal">
@@ -379,7 +389,7 @@
           <span>STATUS · BUILDING</span>
         </div>
         <h1 class="reveal">Human cognition,<br><span class="thin">machine precision.</span></h1>
-        <p class="hero-sub reveal">Cognitaur is a youth-led innovation lab — designing, machining, printing, coding and inventing across seven disciplines.</p>
+        <p class="hero-sub reveal">Cognitaur is a youth-led innovation lab that designs, machines, prints, codes and invents across seven disciplines.</p>
         <div class="hero-pillars reveal">
           <span><b>01</b> CAD</span>
           <span><b>02</b> CNC</span>
@@ -413,11 +423,14 @@
       <div class="pillar-text">
         <div class="pillar-index">P-01 <span class="tick"></span> DESIGN</div>
         <h3>CAD<em>Parametric modeling &amp; simulation</em></h3>
-        <p>Every build starts as geometry. Concepts become parametric 3D models, assemblies and simulation-ready parts — engineered for how they'll actually be made.</p>
+        <p>Every build starts as geometry. Concepts become parametric 3D models, assemblies and simulation-ready parts, engineered for how they'll actually be made.</p>
         <div class="pillar-tags"><span>Fusion 360</span><span>SolidWorks</span><span>Assemblies</span><span>DFM</span></div>
       </div>
       <div class="pillar-media">
-        <figure class="media"><iframe src="https://drive.google.com/file/d/12uRdMgJ6v5sVOpxk8UIZPSUGKoqujgrZ/preview" title="CAD video" allow="autoplay" allowfullscreen loading="lazy"></iframe></figure>
+        <figure class="media media--embed">
+          <iframe class="embed-drive" data-src="https://drive.google.com/file/d/12uRdMgJ6v5sVOpxk8UIZPSUGKoqujgrZ/preview" title="CAD video" allow="autoplay; fullscreen; encrypted-media; picture-in-picture" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
+          <iframe class="embed-yt" data-src="https://www.youtube.com/embed/8xyynDcoFzM" title="CAD video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        </figure>
         <figure class="media"><img src="assets/img/pillar-cad.png" alt="CAD design work at Cognitaur Innovation Lab"></figure>
       </div>
     </article>
@@ -427,11 +440,14 @@
       <div class="pillar-text">
         <div class="pillar-index">P-02 <span class="tick"></span> MACHINING</div>
         <h3>CNC<em>Subtractive manufacturing</em></h3>
-        <p>Digital models cut into real material. Tight-tolerance parts milled and routed from metal, wood and composites — where a design earns its place in the physical world.</p>
+        <p>Digital models cut into real material. Tight-tolerance parts are milled and routed from metal, wood and composites, where a design earns its place in the physical world.</p>
         <div class="pillar-tags"><span>CNC Milling</span><span>Routing</span><span>Toolpaths</span><span>Tolerancing</span></div>
       </div>
       <div class="pillar-media">
-        <figure class="media"><iframe src="https://drive.google.com/file/d/15_BD2IB2kNqrs_HAQ_1-XwNvSoDrTJvt/preview" title="CNC cutting video" allow="autoplay" allowfullscreen loading="lazy"></iframe></figure>
+        <figure class="media media--embed">
+          <iframe class="embed-drive" data-src="https://drive.google.com/file/d/15_BD2IB2kNqrs_HAQ_1-XwNvSoDrTJvt/preview" title="CNC cutting video" allow="autoplay; fullscreen; encrypted-media; picture-in-picture" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
+          <iframe class="embed-yt" data-src="https://www.youtube.com/embed/aFEZrsbHhaI" title="CNC cutting video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        </figure>
         <!-- PHOTO -->
         <figure class="media"><img src="assets/img/pillar-cnc.jpg" alt="Genmitsu desktop CNC router with aluminum frame, spindle and machining bed in the Cognitaur lab"></figure>
       </div>
@@ -442,11 +458,14 @@
       <div class="pillar-text">
         <div class="pillar-index">P-03 <span class="tick"></span> ADDITIVE</div>
         <h3>3D Printing<em>Rapid additive prototyping</em></h3>
-        <p>Iterate in hours, not weeks. FDM and resin workflows turn revisions into held-in-hand prototypes — the fastest loop between an idea and testing whether it works.</p>
+        <p>Iterate in hours, not weeks. FDM and resin workflows turn revisions into held-in-hand prototypes, the fastest loop between an idea and testing whether it works.</p>
         <div class="pillar-tags"><span>FDM</span><span>SLA / Resin</span><span>Prototyping</span><span>Slicing</span></div>
       </div>
       <div class="pillar-media">
-        <figure class="media"><iframe src="https://drive.google.com/file/d/1ASlgFG8unORh8Mm-k0jZSD6JDB7urKQO/preview" title="3D printing video" allow="autoplay" allowfullscreen loading="lazy"></iframe></figure>
+        <figure class="media media--embed">
+          <iframe class="embed-drive" data-src="https://drive.google.com/file/d/1ASlgFG8unORh8Mm-k0jZSD6JDB7urKQO/preview" title="3D printing video" allow="autoplay; fullscreen; encrypted-media; picture-in-picture" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
+          <iframe class="embed-yt" data-src="https://www.youtube.com/embed/j9mjqaJLu14" title="3D printing video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        </figure>
         <!-- PHOTO -->
         <figure class="media"><img src="assets/img/pillar-3dprinting.jpg" alt="Bambu Lab H2S 3D printer with AMS multi-material system in the Cognitaur lab"></figure>
       </div>
@@ -457,7 +476,7 @@
       <div class="pillar-text">
         <div class="pillar-index">P-04 <span class="tick"></span> CODE</div>
         <h3>Programming<em>Python teaching &amp; C++ robotics</em></h3>
-        <p>Code is the through-line. Ayushmaan Bellum has taught Python to <strong style="color:var(--paper)">400+ young learners</strong> and writes the C++ that drives the lab's robots — turning software into a language kids can build real things with.</p>
+        <p>Code is the through-line. Ayushmaan Bellum has taught Python to <strong style="color:var(--paper)">400+ young learners</strong> and writes the C++ that drives the lab's robots, turning software into a language kids can build real things with.</p>
         <div class="pillar-tags"><span>Python</span><span>C++</span><span>Robotics firmware</span><span>400+ students</span></div>
       </div>
       <div class="pillar-media">
@@ -474,8 +493,11 @@
         <div class="pillar-tags"><span>Mechatronics</span><span>Embedded</span><span>Sensors</span><span>Autonomy</span></div>
       </div>
       <div class="pillar-media">
-        <figure class="media"><iframe src="https://drive.google.com/file/d/1CRIS1v_jo0gzYAHldEw6iMGwRRDiBi6l/preview" title="Robotics video" allow="autoplay" allowfullscreen loading="lazy"></iframe></figure>
-        <figure class="media"><img src="assets/img/pillar-robotics.jpg" alt="Robotics work at Cognitaur Innovation Lab — mechatronics, sensors and control systems"></figure>
+        <figure class="media media--embed">
+          <iframe class="embed-drive" data-src="https://drive.google.com/file/d/1CRIS1v_jo0gzYAHldEw6iMGwRRDiBi6l/preview" title="Robotics video" allow="autoplay; fullscreen; encrypted-media; picture-in-picture" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
+          <iframe class="embed-yt" data-src="https://www.youtube.com/embed/-EUBpdooVn4" title="Robotics video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        </figure>
+        <figure class="media"><img src="assets/img/pillar-robotics.jpg" alt="Robotics work at Cognitaur Innovation Lab: mechatronics, sensors and control systems"></figure>
       </div>
     </article>
 
@@ -484,7 +506,7 @@
       <div class="pillar-text">
         <div class="pillar-index">P-06 <span class="tick"></span> INQUIRY</div>
         <h3>Research<em>Published, peer-reviewed inquiry</em></h3>
-        <p>Open-ended exploration that feeds everything else — taken all the way to publication. Ayushmaan Bellum co-authored <strong style="color:var(--paper)">"Zeroing In: The Power of PID in Next-Gen Robotics,"</strong> a peer-reviewed study of PID control published in the <strong style="color:var(--paper)">National High School Journal of Science (2025)</strong>.</p>
+        <p>Open-ended exploration that feeds everything else, taken all the way to publication. Ayushmaan Bellum co-authored <strong style="color:var(--paper)">"Zeroing In: The Power of PID in Next-Gen Robotics,"</strong> a peer-reviewed study of PID control published in the <strong style="color:var(--paper)">National High School Journal of Science (2025)</strong>.</p>
         <p style="margin-top:1rem"><a href="https://nhsjs.com/2025/zeroing-in-the-power-of-pid-in-next-gen-robotics/" target="_blank" rel="noopener" style="font-family:var(--mono);font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;color:var(--brass);border-bottom:1px solid var(--brass);padding-bottom:2px">Read the paper on NHSJS →</a></p>
         <div class="pillar-tags"><span>NHSJS 2025</span><span>PID Control</span><span>Experiments</span><span>Publishing</span></div>
       </div>
@@ -515,19 +537,19 @@
           <div class="inv-no">INV-01</div>
           <h3>Dermalytix</h3>
           <div class="inv-cat">Pressure injury prevention · AI health tech</div>
-          <p>An AI-powered pressure-monitoring system that helps prevent pressure injuries (bedsores) before visible damage occurs — an FSR sensor mat streaming to a companion app with an AI model that flags risk early.</p>
+          <p>An AI-powered pressure-monitoring system that helps prevent pressure injuries (bedsores) before visible damage occurs. An FSR sensor mat streams to a companion app with an AI model that flags risk early.</p>
         </div>
       </div>
 
       <!-- INV-02 -->
       <div class="inv-card reveal">
-        <figure class="media"><img src="assets/img/invention-robopyll.jpg" alt="Robopyll — Ayushmaan Bellum's medication-dispensing robot prototype with a display face named RAY, control screen and pill bottles"></figure>
+        <figure class="media"><img src="assets/img/invention-robopyll.jpg" alt="Robopyll, Ayushmaan Bellum's medication-dispensing robot prototype with a display face named RAY, control screen and pill bottles"></figure>
         <div class="inv-body">
           <span class="inv-badge">⊕ Patent Pending</span>
           <div class="inv-no">INV-02</div>
           <h3>Robopyll</h3>
           <div class="inv-cat">Medication dispensing · Robotics</div>
-          <p>An automated medication-dispensing device that delivers the right dose at the right time — engineered to make daily medication safer, simpler and harder to get wrong.</p>
+          <p>An automated medication-dispensing device that delivers the right dose at the right time, engineered to make daily medication safer, simpler and harder to get wrong.</p>
         </div>
       </div>
 
@@ -539,7 +561,7 @@
           <div class="inv-no">INV-03</div>
           <h3>QRHealthX</h3>
           <div class="inv-cat">Care navigation · QR health tech</div>
-          <p>A smart QR-powered health navigation tool that turns discharge papers and care plans into clear, AI-simplified instructions — with medication and follow-up reminders, progress tracking, multilingual support and a low-tech-friendly design.</p>
+          <p>A smart QR-powered health navigation tool that turns discharge papers and care plans into clear, AI-simplified instructions, with medication and follow-up reminders, progress tracking, multilingual support and a low-tech-friendly design.</p>
         </div>
       </div>
 
@@ -557,16 +579,16 @@
       <div class="founder-body reveal">
         <span class="eyebrow">The Founder · 0,0 Origin</span>
         <h2>Ayushmaan Bellum</h2>
-        <p>Ayushmaan Bellum is the founder and lead of Cognitaur Innovation Lab — a young engineer, maker, teacher and entrepreneur working across design, manufacturing, code and robotics. He builds fluently in CAD, machines his own parts on CNC, prototypes with 3D printing, writes the software that drives his robots, and researches what comes next.</p>
-        <p>He's also a teacher, a competitor, a published author and an inventor. Ayushmaan Bellum captains <strong style="color:var(--paper)">VEX Robotics Team 29712C "Cognitaur" — a World Championship qualifier</strong>, has taught <strong style="color:var(--paper)">Python to over 400 young learners</strong>, programs robotics in <strong style="color:var(--paper)">C++</strong>, co-authored a <strong style="color:var(--paper)">peer-reviewed robotics study in the National High School Journal of Science</strong>, and holds three patent-pending inventions — <strong style="color:var(--paper)">Dermalytix</strong>, <strong style="color:var(--paper)">Robopyll</strong> and <strong style="color:var(--paper)">QRHealthX</strong>. A student at Laurel Springs School (Class of 2028) based in Folsom, California, his honors include <strong style="color:var(--paper)">Conrad Innovator at the Conrad Global Challenge (2026)</strong> for Dermalytix, <strong style="color:var(--paper)">1st place at the Code for Impact Hackathon</strong> for SunShiftAI, 3rd place in Applied Engineering at the California Regional STEM Competition (2026), the Think Award at the California State Championship, 3rd place worldwide in the RECF CAD Design Challenge, the Presidential Volunteer Service Award (Gold), congressional recognition for student STEM innovation, and a feature on CBS Good Day Sacramento.</p>
-        <p>Beyond building, he leads. Cognitaur is his platform to run hands-on camps, mentor peers, open internships, and partner with professionals and industry — turning individual skill into a community and a venture.</p>
+        <p>Ayushmaan Bellum is the founder and lead of Cognitaur Innovation Lab. He is a young engineer, maker, teacher and entrepreneur working across design, manufacturing, code and robotics. He builds fluently in CAD, machines his own parts on CNC, prototypes with 3D printing, writes the software that drives his robots, and researches what comes next.</p>
+        <p>He's also a teacher, a competitor, a published author and an inventor. Ayushmaan Bellum captains <strong style="color:var(--paper)">VEX Robotics Team 29712C "Cognitaur," a World Championship qualifier</strong>, has taught <strong style="color:var(--paper)">Python to over 400 young learners</strong>, programs robotics in <strong style="color:var(--paper)">C++</strong>, co-authored a <strong style="color:var(--paper)">peer-reviewed robotics study in the National High School Journal of Science</strong>, and holds three patent-pending inventions: <strong style="color:var(--paper)">Dermalytix</strong>, <strong style="color:var(--paper)">Robopyll</strong> and <strong style="color:var(--paper)">QRHealthX</strong>. A student at Laurel Springs School (Class of 2028) based in Folsom, California, his honors include <strong style="color:var(--paper)">Conrad Innovator at the Conrad Global Challenge (2026)</strong> for Dermalytix, <strong style="color:var(--paper)">1st place at the Code for Impact Hackathon</strong> for SunShiftAI, 3rd place in Applied Engineering at the California Regional STEM Competition (2026), the Think Award at the California State Championship, 3rd place worldwide in the RECF CAD Design Challenge, the Presidential Volunteer Service Award (Gold), congressional recognition for student STEM innovation, and a feature on CBS Good Day Sacramento.</p>
+        <p>Beyond building, he leads. Cognitaur is his platform to run hands-on camps, mentor peers, open internships, and partner with professionals and industry, turning individual skill into a community and a venture.</p>
         <div class="founder-stats">
           <div><b>07</b><span>Disciplines</span></div>
           <div><b>400+</b><span>Students taught</span></div>
           <div><b>03</b><span>Patents pending</span></div>
           <div><b>2025</b><span>Founded</span></div>
         </div>
-        <p class="founder-quote">"Designed by mind. Made by machine. Led by one — built for many."</p>
+        <p class="founder-quote">"Designed by mind. Made by machine. Led by one, built for many."</p>
         <p style="margin-top:2rem"><a href="assets/docs/Ayushmaan_Bellum_Resume.pdf" download="Ayushmaan_Bellum_Resume.pdf" class="btn">⊕&nbsp; Download Résumé (PDF)</a></p>
       </div>
     </div>
@@ -610,7 +632,7 @@
       <div class="form-note reveal">
         <span class="eyebrow">Register · Request a spot</span>
         <h2 style="font-size:clamp(1.8rem,4vw,3rem);text-transform:uppercase;margin:1rem 0 1.4rem;">Reserve your place</h2>
-        <p>Tell us which session you'd like to join. Spots are limited and confirmed on a first-come basis — we'll follow up by email with dates and details.</p>
+        <p>Tell us which session you'd like to join. Spots are limited and confirmed on a first-come basis. We'll follow up by email with dates and details.</p>
         <ul>
           <li>Small cohorts, real machines, projects you keep.</li>
           <li>No experience required for beginner sessions.</li>
@@ -640,7 +662,7 @@
               <option>CAD &amp; Design Fundamentals</option>
               <option>Make It Real: 3D Print &amp; CNC</option>
               <option>Intro to Robotics</option>
-              <option>Not sure yet — recommend one</option>
+              <option>Not sure yet; recommend one</option>
             </select>
           </div>
           <div class="field">
@@ -662,7 +684,7 @@
       <div class="intern-body reveal">
         <span class="eyebrow">Internships · Join the build</span>
         <h2>Intern at<br>Cognitaur</h2>
-        <p>We open a small number of internships for students and early-career makers who want real bench time — not coffee runs. You'll work alongside the founder on live projects across the five pillars and leave with a portfolio, not just a certificate.</p>
+        <p>We open a small number of internships for students and early-career makers who want real bench time, not coffee runs. You'll work alongside the founder on live projects across the five pillars and leave with a portfolio, not just a certificate.</p>
         <a href="#collab" class="btn btn--solid">Apply to intern</a>
       </div>
       <div class="intern-list reveal">
@@ -686,19 +708,19 @@
     <div class="mentor-grid">
       <div class="mentor reveal">
         <figure class="media"><div class="ph"><span class="corner c1"></span><span class="corner c2"></span><span class="corner c3"></span><span class="corner c4"></span><span class="lbl">Photo</span><span class="sub">1:1</span></div></figure>
-        <div class="body"><h3>[ Mentor Name ]</h3><div class="role">[ Role · Company ]</div><p>[ One or two lines on their expertise and how they support the lab — e.g. mechanical engineering, product design, or robotics. ]</p></div>
+        <div class="body"><h3>[ Mentor Name ]</h3><div class="role">[ Role · Company ]</div><p>[ One or two lines on their expertise and how they support the lab, e.g. mechanical engineering, product design, or robotics. ]</p></div>
       </div>
       <div class="mentor reveal">
         <figure class="media"><div class="ph"><span class="corner c1"></span><span class="corner c2"></span><span class="corner c3"></span><span class="corner c4"></span><span class="lbl">Photo</span><span class="sub">1:1</span></div></figure>
-        <div class="body"><h3>[ Mentor Name ]</h3><div class="role">[ Role · Company ]</div><p>[ Short bio — their field, notable work, and what they advise Cognitaur on. ]</p></div>
+        <div class="body"><h3>[ Mentor Name ]</h3><div class="role">[ Role · Company ]</div><p>[ Short bio: their field, notable work, and what they advise Cognitaur on. ]</p></div>
       </div>
       <div class="mentor reveal">
         <figure class="media"><div class="ph"><span class="corner c1"></span><span class="corner c2"></span><span class="corner c3"></span><span class="corner c4"></span><span class="lbl">Photo</span><span class="sub">1:1</span></div></figure>
-        <div class="body"><h3>[ Mentor Name ]</h3><div class="role">[ Role · Company ]</div><p>[ Short bio — their field, notable work, and what they advise Cognitaur on. ]</p></div>
+        <div class="body"><h3>[ Mentor Name ]</h3><div class="role">[ Role · Company ]</div><p>[ Short bio: their field, notable work, and what they advise Cognitaur on. ]</p></div>
       </div>
       <div class="mentor reveal">
         <figure class="media"><div class="ph"><span class="corner c1"></span><span class="corner c2"></span><span class="corner c3"></span><span class="corner c4"></span><span class="lbl">Photo</span><span class="sub">1:1</span></div></figure>
-        <div class="body"><h3>[ Mentor Name ]</h3><div class="role">[ Role · Company ]</div><p>[ Short bio — their field, notable work, and what they advise Cognitaur on. ]</p></div>
+        <div class="body"><h3>[ Mentor Name ]</h3><div class="role">[ Role · Company ]</div><p>[ Short bio: their field, notable work, and what they advise Cognitaur on. ]</p></div>
       </div>
     </div>
   </div>
@@ -715,7 +737,7 @@
     <div class="press-list reveal">
       <div class="press-item">
         <div class="press-outlet">Straight Arrow News</div>
-        <div><h3>"What Happens When the Traditional Teen Job Disappears?"</h3><div class="press-note">National feature on Gen Z founders — profiled as a health-tech founder, patent-pending inventor and STEM mentor who monetized his first YouTube channel in fourth grade.</div></div>
+        <div><h3>"What Happens When the Traditional Teen Job Disappears?"</h3><div class="press-note">National feature on Gen Z founders, profiled as a health-tech founder, patent-pending inventor and STEM mentor who monetized his first YouTube channel in fourth grade.</div></div>
         <div class="press-meta">June 2026</div>
       </div>
       <div class="press-item">
@@ -725,7 +747,7 @@
       </div>
       <div class="press-item">
         <div class="press-outlet">Folsom Times</div>
-        <div><h3>"Folsom Student Earns Global Honors for AI-Driven Healthcare Innovation"</h3><div class="press-note">On being named Conrad Innovator in the 2025–26 Conrad Challenge for Dermalytix.</div></div>
+        <div><h3>"Folsom Student Earns Global Honors for AI-Driven Healthcare Innovation"</h3><div class="press-note">On being named Conrad Innovator in the 2025-26 Conrad Challenge for Dermalytix.</div></div>
         <div class="press-meta">Mar 2026 · <a href="https://folsomtimes.com/folsom-student-earns-global-honors-for-ai-driven-healthcare-innovation/" target="_blank" rel="noopener">Read →</a></div>
       </div>
       <div class="press-item">
@@ -753,7 +775,7 @@
   <div class="wrap">
     <span class="eyebrow reveal">Collaborate · Partner · Sponsor</span>
     <h2 class="reveal">Let's build something together</h2>
-    <p class="reveal">Cognitaur is open to professionals, industry partners and institutions — for collaboration, sponsorship, guest mentorship, or simply a conversation about what we're making. If you value young talent moving fast across design and manufacturing, let's talk.</p>
+    <p class="reveal">Cognitaur is open to professionals, industry partners and institutions for collaboration, sponsorship, guest mentorship, or simply a conversation about what we're making. If you value young talent moving fast across design and manufacturing, let's talk.</p>
     <div class="collab-actions reveal">
       <a class="btn btn--solid" id="emailBtn" href="mailto:bellumayush@gmail.com?subject=Collaboration%20with%20Cognitaur%20Innovation%20Lab">Get in touch</a>
       <a class="btn" href="#register">Register for a camp</a>
@@ -815,6 +837,23 @@
   },{threshold:0.12});
   document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
 
+  // Drive on desktop, YouTube on mobile — load only the active player
+  const embedMq=matchMedia('(max-width:640px)');
+  const syncVideoEmbeds=()=>{
+    const mobile=embedMq.matches;
+    document.querySelectorAll('.media--embed').forEach(fig=>{
+      const drive=fig.querySelector('.embed-drive');
+      const yt=fig.querySelector('.embed-yt');
+      if(!drive||!yt) return;
+      const on=mobile?yt:drive;
+      const off=mobile?drive:yt;
+      if(on.dataset.src&&on.getAttribute('src')!==on.dataset.src) on.src=on.dataset.src;
+      if(off.getAttribute('src')){off.removeAttribute('src');off.src='about:blank';}
+    });
+  };
+  syncVideoEmbeds();
+  embedMq.addEventListener('change',syncVideoEmbeds);
+
   // Registration form -> opens a prefilled email (swap the address for your own,
   // or connect a service like Formspree by setting the form action instead).
   const CONTACT_EMAIL='bellumayush@gmail.com';
@@ -835,7 +874,7 @@
       `Name: ${name}\nEmail: ${email}\nPhone: ${form.phone.value.trim()||'-'}\nSession: ${session}\n\n${form.msg.value.trim()}`
     );
     msg.className='form-msg ok';
-    msg.textContent='Thanks, '+name.split(' ')[0]+' — your email app is opening to send the request. If it doesn\u2019t, email '+CONTACT_EMAIL+' directly.';
+    msg.textContent='Thanks, '+name.split(' ')[0]+'. Your email app is opening to send the request. If it doesn\u2019t, email '+CONTACT_EMAIL+' directly.';
     window.location.href=`mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent('Camp registration · '+session)}&body=${body}`;
     form.reset();
   });
