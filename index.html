@@ -231,7 +231,7 @@
   .form-note p{color:#c4c1b8;margin-bottom:1.2rem;max-width:42ch;text-align:justify;text-justify:inter-word;hyphens:auto}
   .form-note ul{list-style:none;margin-top:1.6rem;display:grid;gap:.9rem}
   .form-note li{font-family:var(--mono);font-size:.82rem;color:var(--dim);display:flex;gap:.8rem;align-items:flex-start}
-  .form-note li::before{content:"⊕";color:var(--brass)}
+  .form-note li::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--brass);margin-top:.45em;flex-shrink:0}
   form.reg-form{display:grid;gap:1.1rem}
   .field{display:grid;gap:.5rem}
   .field label{font-family:var(--mono);font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:var(--dim)}
@@ -380,14 +380,13 @@
     <div class="hero-grid">
       <div class="hero-logo reveal">
         <img src="assets/img/logo-cognitaur.jpg" alt="Cognitaur, a hand-drawn robot with an exposed brain">
-        <div class="hero-logo-cap"><span>FIG. 01 · THE COGNITAUR</span><span>⊕ 0,0,0</span></div>
+        <div class="hero-logo-cap"><span>THE COGNITAUR</span><span>Innovation Lab</span></div>
       </div>
       <div class="hero-copy">
         <div class="hero-origin reveal">
-          <span>EST. 2025</span>
-          <span>07 DISCIPLINES</span>
-          <span>STATUS · BUILDING</span>
-        </div>
+          <span>Est. 2025</span>
+          <span>7 disciplines</span>
+                  </div>
         <h1 class="reveal">Human cognition,<br><span class="thin">machine precision.</span></h1>
         <p class="hero-sub reveal">Cognitaur is a youth-led innovation lab that designs, machines, prints, codes and invents across seven disciplines.</p>
         <div class="hero-pillars reveal">
@@ -415,13 +414,13 @@
   <div class="wrap">
     <div class="sec-head reveal">
       <h2>Seven disciplines,<br>one workflow</h2>
-      <div class="coord">SECTION · P<br>07 CAPABILITIES</div>
+      <div class="coord">Design · Make · Invent</div>
     </div>
 
-    <!-- P-01 CAD -->
+    <!-- CAD -->
     <article class="pillar reveal">
       <div class="pillar-text">
-        <div class="pillar-index">P-01 <span class="tick"></span> DESIGN</div>
+        <div class="pillar-index">Design <span class="tick"></span></div>
         <h3>CAD<em>Parametric modeling &amp; simulation</em></h3>
         <p>Every build starts as geometry. Concepts become parametric 3D models, assemblies and simulation-ready parts, engineered for how they'll actually be made.</p>
         <div class="pillar-tags"><span>Fusion 360</span><span>SolidWorks</span><span>Assemblies</span><span>DFM</span></div>
@@ -435,10 +434,10 @@
       </div>
     </article>
 
-    <!-- P-02 CNC -->
+    <!-- CNC -->
     <article class="pillar reveal">
       <div class="pillar-text">
-        <div class="pillar-index">P-02 <span class="tick"></span> MACHINING</div>
+        <div class="pillar-index">Machining <span class="tick"></span></div>
         <h3>CNC<em>Subtractive manufacturing</em></h3>
         <p>Digital models cut into real material. Tight-tolerance parts are milled and routed from metal, wood and composites, where a design earns its place in the physical world.</p>
         <div class="pillar-tags"><span>CNC Milling</span><span>Routing</span><span>Toolpaths</span><span>Tolerancing</span></div>
@@ -453,10 +452,10 @@
       </div>
     </article>
 
-    <!-- P-03 3D PRINTING -->
+    <!-- 3D PRINTING -->
     <article class="pillar reveal">
       <div class="pillar-text">
-        <div class="pillar-index">P-03 <span class="tick"></span> ADDITIVE</div>
+        <div class="pillar-index">Additive <span class="tick"></span></div>
         <h3>3D Printing<em>Rapid additive prototyping</em></h3>
         <p>Iterate in hours, not weeks. FDM and resin workflows turn revisions into held-in-hand prototypes, the fastest loop between an idea and testing whether it works.</p>
         <div class="pillar-tags"><span>FDM</span><span>SLA / Resin</span><span>Prototyping</span><span>Slicing</span></div>
@@ -471,10 +470,10 @@
       </div>
     </article>
 
-    <!-- P-04 PROGRAMMING -->
+    <!-- PROGRAMMING -->
     <article class="pillar reveal">
       <div class="pillar-text">
-        <div class="pillar-index">P-04 <span class="tick"></span> CODE</div>
+        <div class="pillar-index">Code <span class="tick"></span></div>
         <h3>Programming<em>Python teaching &amp; C++ robotics</em></h3>
         <p>Code is the through-line. Ayushmaan Bellum has taught Python to <strong style="color:var(--paper)">400+ young learners</strong> and writes the C++ that drives the lab's robots, turning software into a language kids can build real things with.</p>
         <div class="pillar-tags"><span>Python</span><span>C++</span><span>Robotics firmware</span><span>400+ students</span></div>
@@ -484,10 +483,10 @@
       </div>
     </article>
 
-    <!-- P-05 ROBOTICS -->
+    <!-- ROBOTICS -->
     <article class="pillar reveal">
       <div class="pillar-text">
-        <div class="pillar-index">P-05 <span class="tick"></span> SYSTEMS</div>
+        <div class="pillar-index">Systems <span class="tick"></span></div>
         <h3>Robotics<em>Mechatronics &amp; control</em></h3>
         <p>Where mechanical design, electronics and code converge. Sensors, actuators and embedded control combine into machines that move, sense and decide.</p>
         <div class="pillar-tags"><span>Mechatronics</span><span>Embedded</span><span>Sensors</span><span>Autonomy</span></div>
@@ -501,10 +500,10 @@
       </div>
     </article>
 
-    <!-- P-05 RESEARCH -->
+    <!-- RESEARCH -->
     <article class="pillar reveal">
       <div class="pillar-text">
-        <div class="pillar-index">P-06 <span class="tick"></span> INQUIRY</div>
+        <div class="pillar-index">Inquiry <span class="tick"></span></div>
         <h3>Research<em>Published, peer-reviewed inquiry</em></h3>
         <p>Open-ended exploration that feeds everything else, taken all the way to publication. Ayushmaan Bellum co-authored <strong style="color:var(--paper)">"Zeroing In: The Power of PID in Next-Gen Robotics,"</strong> a peer-reviewed study of PID control published in the <strong style="color:var(--paper)">National High School Journal of Science (2025)</strong>.</p>
         <p style="margin-top:1rem"><a href="https://nhsjs.com/2025/zeroing-in-the-power-of-pid-in-next-gen-robotics/" target="_blank" rel="noopener" style="font-family:var(--mono);font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;color:var(--brass);border-bottom:1px solid var(--brass);padding-bottom:2px">Read the paper on NHSJS →</a></p>
@@ -520,45 +519,39 @@
   </div>
 </section>
 
-<!-- ============ INVENTIONS (P-07) ============ -->
+<!-- ============ INVENTIONS ============ -->
 <section id="inventions">
   <div class="wrap">
     <div class="sec-head reveal">
       <h2>Inventions</h2>
-      <div class="coord">P-07 · APPLIED<br>03 · PATENT PENDING</div>
+      <div class="coord">Health tech &amp; robotics</div>
     </div>
     <div class="inv-grid">
 
-      <!-- INV-01 -->
+      <!-- Dermalytix -->
       <div class="inv-card reveal">
         <figure class="media"><img src="assets/img/invention-dermalytix.jpg" alt="Ayushmaan Bellum demonstrating the Dermalytix pressure-sensing mat live, with weights on the sensor mat and the monitoring app on an iPad"></figure>
         <div class="inv-body">
-          <span class="inv-badge">⊕ Patent Pending</span>
-          <div class="inv-no">INV-01</div>
           <h3>Dermalytix</h3>
           <div class="inv-cat">Pressure injury prevention · AI health tech</div>
           <p>An AI-powered pressure-monitoring system that helps prevent pressure injuries (bedsores) before visible damage occurs. An FSR sensor mat streams to a companion app with an AI model that flags risk early.</p>
         </div>
       </div>
 
-      <!-- INV-02 -->
+      <!-- Robopyll -->
       <div class="inv-card reveal">
         <figure class="media"><img src="assets/img/invention-robopyll.jpg" alt="Robopyll, Ayushmaan Bellum's medication-dispensing robot prototype with a display face named RAY, control screen and pill bottles"></figure>
         <div class="inv-body">
-          <span class="inv-badge">⊕ Patent Pending</span>
-          <div class="inv-no">INV-02</div>
           <h3>Robopyll</h3>
           <div class="inv-cat">Medication dispensing · Robotics</div>
           <p>An automated medication-dispensing device that delivers the right dose at the right time, engineered to make daily medication safer, simpler and harder to get wrong.</p>
         </div>
       </div>
 
-      <!-- INV-03 -->
+      <!-- QRHealthX -->
       <div class="inv-card reveal">
         <figure class="media"><img src="assets/img/invention-qrhealthx.jpg" alt="Ayushmaan Bellum presenting QRHealthX at an exhibition, beside a banner explaining its scan, simplify, guide and support workflow"></figure>
         <div class="inv-body">
-          <span class="inv-badge">⊕ Patent Pending</span>
-          <div class="inv-no">INV-03</div>
           <h3>QRHealthX</h3>
           <div class="inv-cat">Care navigation · QR health tech</div>
           <p>A smart QR-powered health navigation tool that turns discharge papers and care plans into clear, AI-simplified instructions, with medication and follow-up reminders, progress tracking, multilingual support and a low-tech-friendly design.</p>
@@ -577,19 +570,19 @@
         <figure class="media"><img src="assets/img/founder-ayushmaan.jpg" alt="Ayushmaan Bellum, founder of Cognitaur Innovation Lab, in the red Cognitaur Team 29712C captain's jacket with the embroidered robot logo"></figure>
       </div>
       <div class="founder-body reveal">
-        <span class="eyebrow">The Founder · 0,0 Origin</span>
+        <span class="eyebrow">Founder</span>
         <h2>Ayushmaan Bellum</h2>
         <p>Ayushmaan Bellum is the founder and lead of Cognitaur Innovation Lab. He is a young engineer, maker, teacher and entrepreneur working across design, manufacturing, code and robotics. He builds fluently in CAD, machines his own parts on CNC, prototypes with 3D printing, writes the software that drives his robots, and researches what comes next.</p>
-        <p>He's also a teacher, a competitor, a published author and an inventor. Ayushmaan Bellum captains <strong style="color:var(--paper)">VEX Robotics Team 29712C "Cognitaur," a World Championship qualifier</strong>, has taught <strong style="color:var(--paper)">Python to over 400 young learners</strong>, programs robotics in <strong style="color:var(--paper)">C++</strong>, co-authored a <strong style="color:var(--paper)">peer-reviewed robotics study in the National High School Journal of Science</strong>, and holds three patent-pending inventions: <strong style="color:var(--paper)">Dermalytix</strong>, <strong style="color:var(--paper)">Robopyll</strong> and <strong style="color:var(--paper)">QRHealthX</strong>. A student at Laurel Springs School (Class of 2028) based in Folsom, California, his honors include <strong style="color:var(--paper)">Conrad Innovator at the Conrad Global Challenge (2026)</strong> for Dermalytix, <strong style="color:var(--paper)">1st place at the Code for Impact Hackathon</strong> for SunShiftAI, 3rd place in Applied Engineering at the California Regional STEM Competition (2026), the Think Award at the California State Championship, 3rd place worldwide in the RECF CAD Design Challenge, the Presidential Volunteer Service Award (Gold), congressional recognition for student STEM innovation, and a feature on CBS Good Day Sacramento.</p>
+        <p>He's also a teacher, a competitor, a published author and an inventor. Ayushmaan Bellum captains <strong style="color:var(--paper)">VEX Robotics Team 29712C "Cognitaur," a World Championship qualifier</strong>, has taught <strong style="color:var(--paper)">Python to over 400 young learners</strong>, programs robotics in <strong style="color:var(--paper)">C++</strong>, co-authored a <strong style="color:var(--paper)">peer-reviewed robotics study in the National High School Journal of Science</strong>, and holds three inventions: <strong style="color:var(--paper)">Dermalytix</strong>, <strong style="color:var(--paper)">Robopyll</strong> and <strong style="color:var(--paper)">QRHealthX</strong>. A student at Laurel Springs School (Class of 2028) based in Folsom, California, his honors include <strong style="color:var(--paper)">Conrad Innovator at the Conrad Global Challenge (2026)</strong> for Dermalytix, <strong style="color:var(--paper)">1st place at the Code for Impact Hackathon</strong> for SunShiftAI, 3rd place in Applied Engineering at the California Regional STEM Competition (2026), the Think Award at the California State Championship, 3rd place worldwide in the RECF CAD Design Challenge, the Presidential Volunteer Service Award (Gold), congressional recognition for student STEM innovation, and a feature on CBS Good Day Sacramento.</p>
         <p>Beyond building, he leads. Cognitaur is his platform to run hands-on camps, mentor peers, open internships, and partner with professionals and industry, turning individual skill into a community and a venture.</p>
         <div class="founder-stats">
-          <div><b>07</b><span>Disciplines</span></div>
+          <div><b>7</b><span>Disciplines</span></div>
           <div><b>400+</b><span>Students taught</span></div>
-          <div><b>03</b><span>Patents pending</span></div>
+          <div><b>3</b><span>Inventions</span></div>
           <div><b>2025</b><span>Founded</span></div>
         </div>
         <p class="founder-quote">"Designed by mind. Made by machine. Led by one, built for many."</p>
-        <p style="margin-top:2rem"><a href="assets/docs/Ayushmaan_Bellum_Resume.pdf" download="Ayushmaan_Bellum_Resume.pdf" class="btn">⊕&nbsp; Download Résumé (PDF)</a></p>
+        <p style="margin-top:2rem"><a href="assets/docs/Ayushmaan_Bellum_Resume.pdf" download="Ayushmaan_Bellum_Resume.pdf" class="btn">Download résumé (PDF)</a></p>
       </div>
     </div>
   </div>
@@ -600,23 +593,23 @@
   <div class="wrap">
     <div class="sec-head reveal">
       <h2>Camps &amp; sessions</h2>
-      <div class="coord">ENROLLMENT · OPEN<br>HANDS-ON · ALL LEVELS</div>
+      <div class="coord">Hands-on · All levels</div>
     </div>
     <div class="cards">
       <div class="card reveal">
-        <div class="meta"><span>C-01</span><span>Weekend</span></div>
+        <div class="meta"><span>Weekend</span></div>
         <h3>CAD &amp; Design Fundamentals</h3>
         <p>Learn to think in 3D. Sketch, model and assemble your first parametric parts, then prep them for real manufacturing.</p>
         <div class="card-foot"><span>Beginner · 2 days</span><a href="#register" class="reg">Register →</a></div>
       </div>
       <div class="card reveal">
-        <div class="meta"><span>C-02</span><span>Workshop</span></div>
+        <div class="meta"><span>Workshop</span></div>
         <h3>Make It Real: 3D Print &amp; CNC</h3>
         <p>Take a design from screen to shelf. Slice and print a prototype, then machine a finished part with proper tolerances.</p>
         <div class="card-foot"><span>Intermediate · 3 days</span><a href="#register" class="reg">Register →</a></div>
       </div>
       <div class="card reveal">
-        <div class="meta"><span>C-03</span><span>Bootcamp</span></div>
+        <div class="meta"><span>Bootcamp</span></div>
         <h3>Intro to Robotics</h3>
         <p>Build a machine that moves and senses. Wire sensors and actuators, write control code, and bring a small robot to life.</p>
         <div class="card-foot"><span>All levels · 4 days</span><a href="#register" class="reg">Register →</a></div>
@@ -630,7 +623,7 @@
   <div class="wrap">
     <div class="form-grid">
       <div class="form-note reveal">
-        <span class="eyebrow">Register · Request a spot</span>
+        <span class="eyebrow">Register</span>
         <h2 style="font-size:clamp(1.8rem,4vw,3rem);text-transform:uppercase;margin:1rem 0 1.4rem;">Reserve your place</h2>
         <p>Tell us which session you'd like to join. Spots are limited and confirmed on a first-come basis. We'll follow up by email with dates and details.</p>
         <ul>
@@ -682,17 +675,17 @@
   <div class="wrap">
     <div class="intern-grid">
       <div class="intern-body reveal">
-        <span class="eyebrow">Internships · Join the build</span>
+        <span class="eyebrow">Internships</span>
         <h2>Intern at<br>Cognitaur</h2>
         <p>We open a small number of internships for students and early-career makers who want real bench time, not coffee runs. You'll work alongside the founder on live projects across the five pillars and leave with a portfolio, not just a certificate.</p>
         <a href="#collab" class="btn btn--solid">Apply to intern</a>
       </div>
       <div class="intern-list reveal">
-        <div><span class="no">I-01</span><div class="txt"><b>Design &amp; CAD</b><p>Model parts and assemblies for real builds; learn design-for-manufacture.</p></div></div>
-        <div><span class="no">I-02</span><div class="txt"><b>Fabrication</b><p>Run 3D printers and assist on CNC jobs from setup to finished part.</p></div></div>
-        <div><span class="no">I-03</span><div class="txt"><b>Robotics &amp; Electronics</b><p>Wire, program and test mechatronic systems and prototypes.</p></div></div>
-        <div><span class="no">I-04</span><div class="txt"><b>Research &amp; Docs</b><p>Document experiments and help publish the lab's findings and builds.</p></div></div>
-        <div><span class="no">I-05</span><div class="txt"><b>Teaching Assistant</b><p>Help run Python and robotics sessions for younger learners.</p></div></div>
+        <div><div class="txt"><b>Design &amp; CAD</b><p>Model parts and assemblies for real builds; learn design-for-manufacture.</p></div></div>
+        <div><div class="txt"><b>Fabrication</b><p>Run 3D printers and assist on CNC jobs from setup to finished part.</p></div></div>
+        <div><div class="txt"><b>Robotics &amp; Electronics</b><p>Wire, program and test mechatronic systems and prototypes.</p></div></div>
+        <div><div class="txt"><b>Research &amp; Docs</b><p>Document experiments and help publish the lab's findings and builds.</p></div></div>
+        <div><div class="txt"><b>Teaching Assistant</b><p>Help run Python and robotics sessions for younger learners.</p></div></div>
       </div>
     </div>
   </div>
@@ -703,7 +696,7 @@
   <div class="wrap">
     <div class="sec-head reveal">
       <h2>Mentors &amp; advisors</h2>
-      <div class="coord">GUIDANCE · NETWORK<br>INDUSTRY + ACADEMIA</div>
+      <div class="coord">Industry &amp; academia</div>
     </div>
     <div class="mentor-grid">
       <div class="mentor reveal">
@@ -732,12 +725,12 @@
   <div class="wrap">
     <div class="sec-head reveal">
       <h2>In the media</h2>
-      <div class="coord">PRESS · COVERAGE<br>NATIONAL + REGIONAL</div>
+      <div class="coord">National &amp; regional</div>
     </div>
     <div class="press-list reveal">
       <div class="press-item">
         <div class="press-outlet">Straight Arrow News</div>
-        <div><h3>"What Happens When the Traditional Teen Job Disappears?"</h3><div class="press-note">National feature on Gen Z founders, profiled as a health-tech founder, patent-pending inventor and STEM mentor who monetized his first YouTube channel in fourth grade.</div></div>
+        <div><h3>"What Happens When the Traditional Teen Job Disappears?"</h3><div class="press-note">National feature on Gen Z founders, profiled as a health-tech founder, inventor and STEM mentor who monetized his first YouTube channel in fourth grade.</div></div>
         <div class="press-meta">June 2026</div>
       </div>
       <div class="press-item">
@@ -773,7 +766,7 @@
 <section id="collab">
   <div class="grid-bg"></div>
   <div class="wrap">
-    <span class="eyebrow reveal">Collaborate · Partner · Sponsor</span>
+    <span class="eyebrow reveal">Collaborate</span>
     <h2 class="reveal">Let's build something together</h2>
     <p class="reveal">Cognitaur is open to professionals, industry partners and institutions for collaboration, sponsorship, guest mentorship, or simply a conversation about what we're making. If you value young talent moving fast across design and manufacturing, let's talk.</p>
     <div class="collab-actions reveal">
