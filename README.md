@@ -1,70 +1,64 @@
-# Cognitaur Innovation Lab — Website
 
-Official site for Cognitaur Innovation Lab, founded by Ayushmaan Bellum.
-Plain HTML/CSS/JS — no build step, no frameworks, no dependencies.
+# Cognitaur Innovation Lab
 
-## Project structure
+### Engineering. Research. Innovation. Impact.
 
-```
-cognitaur-site/
-├── index.html                     ← the entire site (markup, styles, scripts)
-├── README.md
-└── assets/
-    ├── img/
-    │   ├── logo-cognitaur.jpg     ← full hero logo
-    │   ├── mark-robot.jpg         ← square robot badge (nav + footer)
-    │   ├── favicon.jpg
-    │   ├── founder-ayushmaan.jpg
-    │   ├── pillar-cnc.jpg
-    │   ├── pillar-3dprinting.jpg
-    │   ├── pillar-research.jpg    ← NHSJS paper first page (links to article)
-    │   ├── invention-dermalytix.jpg
-    │   ├── invention-robopyll.jpg
-    │   └── invention-qrhealthx.jpg
-    └── docs/
-        └── Ayushmaan_Bellum_Resume.pdf
-```
+**Cognitaur Innovation Lab** is an interdisciplinary initiative founded by **Ayushmaan Bellum**. It focuses on exploring emerging technologies, developing innovative solutions, and making engineering and scientific exploration accessible.
 
-## Run locally
+Through research, design, experimentation, and collaboration, Cognitaur brings ideas to life and explores how innovation can address real-world challenges.
 
-Option A — just open it: double-click `index.html`.
+## Our Focus Areas
 
-Option B — local server (recommended; matches production behavior):
-- VS Code / Cursor: install the **Live Server** extension → right-click
-  `index.html` → "Open with Live Server".
-- Or from a terminal: `python3 -m http.server 8000` then visit
-  http://localhost:8000
+- **Engineering and Design:** Developing creative solutions through engineering principles and hands-on design.
+- **CAD and Digital Fabrication:** Exploring computer-aided design, CNC machining, and precision manufacturing.
+- **3D Printing:** Turning digital concepts into physical prototypes and functional designs.
+- **Programming and Software Development:** Building applications, tools, and software-driven solutions.
+- **Artificial Intelligence:** Exploring AI and emerging technologies to solve complex problems.
+- **Scientific Research:** Investigating ideas through experimentation, analysis, and interdisciplinary research.
 
-## Where things live in index.html
+## Projects and Inventions
 
-Everything is in one file, organized top to bottom:
-- `<style>` block — all CSS. Design tokens (colors, fonts) are CSS variables
-  under `:root` (`--ink`, `--brass`, `--steel`, etc.).
-- Sections in order: nav → hero → #pillars (P-01…P-06) → #inventions →
-  #founder → #camps → #register → #internships → #mentors → #media → #collab
-  → footer.
-- `<script>` at the bottom — mobile menu, scroll reveal, registration form.
-  `CONTACT_EMAIL` is defined there (currently bellumayush@gmail.com).
+Cognitaur's projects reflect a commitment to applying engineering and technology to meaningful challenges.
 
-## Remaining TODOs before launch
+### Dermalytix
+A pressure-monitoring initiative exploring technology-assisted approaches to bedsore prevention and patient care.
 
-1. **Videos** — each pillar has a placeholder block marked with an HTML
-   comment. For YouTube (Unlisted), replace the placeholder `<div class="ph">…</div>`
-   with:
-   `<iframe width="100%" style="aspect-ratio:16/9;border:0;border-radius:4px"
-    src="https://www.youtube.com/embed/VIDEO_ID" title="…" allowfullscreen></iframe>`
-   For local files, put e.g. `assets/video/cad.mp4` and use:
-   `<video src="assets/video/cad.mp4" controls playsinline
-    style="width:100%;border-radius:4px"></video>`
-2. **Mentors** — four cards in #mentors contain [ bracketed ] placeholders for
-   name, role, bio, and a 1:1 photo. Remove any unused cards.
-3. **Add pillar photos** for CAD and Programming if desired (drop files into
-   assets/img and swap the placeholder blocks the same way as the others).
+### RoboPyll
+An engineering and robotics innovation project focused on developing creative solutions through robotics and design.
 
-## Deploy
+### QRhealthX
+A digital healthcare platform concept designed to improve access to medical information and support continuity of care.
 
-Netlify / Vercel: drag the whole `cognitaur-site` folder into their dashboard.
-GitHub Pages: push this folder to a repo → Settings → Pages → deploy from branch.
-Then point the domain (cognitaur.com) at it per the host's DNS instructions.
+## Research and Exploration
 
-All asset paths are relative, so the site works at any domain or subpath.
+Cognitaur encourages curiosity-driven exploration across engineering, science, healthcare technology, and artificial intelligence. Projects are developed through research, prototyping, testing, and continuous improvement.
+
+## Learning and Opportunities
+
+Cognitaur supports opportunities for students and aspiring innovators to explore STEM through:
+
+- Educational camps and programs
+- Research and engineering initiatives
+- Collaborative projects
+- Mentorship and learning opportunities
+- Internships and hands-on experiences
+
+## Get Involved
+
+We welcome students, educators, researchers, mentors, and organizations interested in engineering, science, and innovation.
+
+Whether you have an idea to explore, a project to develop, or an opportunity to share, we welcome collaboration.
+
+## Founder
+
+**Ayushmaan Bellum**  
+Founder, Cognitaur Innovation Lab
+
+## Contact
+
+**Website:** [https://cognitaur.us](https://cognitaur.us)  
+**Email:** bellumayush@gmail.com
+
+---
+
+© Cognitaur Innovation Lab. All rights reserved.
